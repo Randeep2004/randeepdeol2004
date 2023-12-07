@@ -1,0 +1,79 @@
+
+:root{
+  --width: 100%;
+}
+body{ 
+  background-color: blanchedalmond;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.reset button{
+color: rgb(13, 45, 35);
+
+  
+}
+.row{
+  width: var(--width);
+  display: flex;
+}
+.container{
+  width:45vmin;
+  margin-inline: auto;
+}
+
+/*styles for the box*/
+.box{
+  box-sizing: border-box;
+  border: 2px rgb(7, 7, 7) solid;
+  margin: 2px 5px;
+  border-radius: 20%;
+  display: inline-block;
+  position: relative;
+  background-color: rgb(141, 102, 51);
+  width: calc(var(--width) / 3);
+  aspect-ratio: 1/1;
+}
+/* For the animation */
+@keyframes slide{
+  to{
+    top: 0px;
+  }
+}
+/* styles for the images */
+.box img{
+  border-radius: 20px;
+  width: var(--width);
+  height: var(--width);
+  position: absolute;
+  animation: slide 2.5s ease-out forwards;
+  left: 0; 
+}
+
+
+/*For the congratulations msg */
+.won{
+  display: none;
+  padding: 10% 0;
+}
+.won button{
+  background-color: rgb(78, 152, 156);
+  border: 1px rgb(245, 245, 245) solid;
+  padding: 5px 10px;
+  transition: 0.6s ease-out;
+}
+.won p{
+  font-style: 600;
+  margin: 10px;
+}
+
+.won button:hover{
+  cursor: pointer;
+  background-color: rgb(131, 193, 255);
+}
+.header{
+  margin: 20px;
+}

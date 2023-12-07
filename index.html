@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Connect Three Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Connect-3</h1>
+      <p id="player">Player 1</p>
+    </div>
+    <div class="reset"> <button type="reset" onclick="restart()">Reset</button></div>
+    <div class="won" id="won">
+      <h2 id="wonMsg">Congratulations !!!!</h2>
+      <p id="wonMsgTwo"></p>
+      <button class="restart" onclick="restart()">Restart Game</button>
+    </div>
+    <div class="container" id="board">
+      <div class="row">
+        <div class="box" id="15" onclick="add(15)"></div>
+        <div class="box" id="16" onclick="add(16)"></div>
+        <div class="box" id="17" onclick="add(17)"></div>
+      </div>
+      <div class="row">
+        <div class="box" id="12" onclick="add(12)"></div>
+        <div class="box" id="13" onclick="add(13)"></div>
+        <div class="box" id="14" onclick="add(14)"></div>
+      </div>
+      <div class="row">
+        <div class="box" id="9" onclick="add(9)"></div>
+        <div class="box" id="10" onclick="add(10)"></div>
+        <div class="box" id="11" onclick="add(11)"></div>
+      </div>  
+      <div class="row">
+        <div class="box" id="6" onclick="add(6)"></div>
+        <div class="box" id="7" onclick="add(7)"></div>
+        <div class="box" id="8" onclick="add(8)"></div>
+      </div>
+      <div class="row">
+        <div class="box" id="3" onclick="add(3)"></div>
+        <div class="box" id="4" onclick="add(4)"></div>
+        <div class="box" id="5" onclick="add(5)"></div>
+      </div>
+      <div class="row">
+        <div class="box" id="0" onclick="add(0)"></div>
+        <div class="box" id="1" onclick="add(1)"></div>
+        <div class="box" id="2" onclick="add(2)"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
